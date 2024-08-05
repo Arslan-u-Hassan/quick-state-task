@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QuickStaticTask</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <meta charset="utf-8" />
+    <meta name="description" content="Craft admin dashboard live demo. Check out all the features of the admin panel. A large number of settings, additional services and widgets." />
+    <meta name="keywords" content="Craft, bootstrap, bootstrap 5, admin themes, dark mode, free admin themes, bootstrap admin, bootstrap dashboard" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Quik Logistics - Static | Pages" />
+    <meta property="og:url" content="https://themes.getbootstrap.com/product/craft-bootstrap-5-admin-dashboard-theme" />
+    <meta property="og:site_name" content="Craft by Keenthemes" />
+    <link rel="canonical" href="http://preview.keenthemes.comindex.html" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+
+    <link rel="shortcut icon" href="../../assets/stylesheets/theme/assets/media/logos/favicon.ico" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="bg-white px-8 py-4 d-flex align-items-center justify-content-between" >
+          <div class="d-flex align-items-center gap-2 gap-lg-10" >
+              <i class="d-lg-none ki-duotone ki-abstract-14 fs-1"><span class="path1"></span><span class="path2"></span></i>
+              <div>
+                  <img class="w-80px h-25px " src="./assets/quik-logo-new.svg">
+              </div>
+              <div class="d-none d-lg-flex align-items-center gap-12" >
+                  <div class="d-flex" >
+                      <div>
+                          <div class="d-flex tabs">
+                              <a href="#dashbaord" class="tab">Dashboard</a>
+                              <a href="#users" class="tab">Users</a>
+                              <a href="#orders" class="tab active">Orders</a>
+                              <a href="#buyers" class="tab">Buyers</a>
+                              <button class="px-4 py-2 bg-white border-0 d-flex align-items-center" id="kt_header_user_menu_toggle" >
+                                  <div class="text-gray-600 fs-6 d-flex align-items-center gap-4 cursor-pointer" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-start">
+                                    <span>Finance</span>
+                                    <img src="./assets/chevron-down.svg" width="12" height="12" >
+                                  </div>
+                                  <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-color fw-semibold py-4 fs-6 w-275px" data-kt-menu="true">
+                                      <div class="menu-item px-5">
+                                        <a href="account/settings.html" class="menu-link px-5">Transactions</a>
+                                      </div>
+                                      <div class="menu-item px-5">
+                                        <a href="account/settings.html" class="menu-link px-5">Payouts</a>
+                                      </div>
+                                  </div>
+                              </button>
+                              <div class="tabsShadow"></div>
+                              <div class="glider"></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div>
+              <div class="d-flex align-items-center ms-2 ms-lg-3" id="kt_header_user_menu_toggle">
+                  <div class="cursor-pointer symbol symbol-35px symbol-lg-35px" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
+                      <img alt="Pic" src="../theme/assets/media/avatars/300-1.jpg" />
+                  </div>
+                  <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-color fw-semibold py-4 fs-6 w-275px" data-kt-menu="true">
+                      <div class="menu-item px-3">
+                          <div class="menu-content d-flex align-items-center px-3">
+                              <div class="symbol symbol-50px me-5">
+                                  <img alt="Logo" src="../theme/assets/media/avatars/300-1.jpg" />
+                              </div>
+                              <div class="d-flex flex-column">
+                                  <div class="fw-bold d-flex align-items-center fs-5">Max Smith</div>
+                                  <a href="#" class="fw-semibold text-muted text-hover-primary fs-7">max@kt.com</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="separator my-2"></div>
+                      <div class="menu-item px-5">
+                          <a href="account/settings.html" class="menu-link px-5">Account Settings</a>
+                      </div>
+                      <div class="menu-item px-5">
+                          <a href="account/settings.html" class="menu-link px-5">Sign Out</a>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+      </nav>
+    </header>
+    <main>
+      <div class="py-8 px-10" >
+        <h1 class="text-secondary fw-bold my-1 fs-2">Import Orders</h1>
+      </div>
+      <div>
+        <%= yield %>
+      </div>
+    </main>
+  </body>
+</html>
+
+<script>
+  var txt1heading = 'How do I upload a csv file?';
+  var txt1para1 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eveniet quidem ab, consequuntur iusto minus animi! Quod quos facilis corporis sint cumque sit magnam aspernatur?';
+  var txt1para2 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eveniet quidem ab, consequuntur iusto minus animi! Quod quos facilis corporis sint cumque sit magnam aspernatur?';
+
+  var txt2heading = 'How will this work?';
+  var txt2para1 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eveniet quidem ab, consequuntur iusto minus animi! Quod quos facilis corporis sint cumque sit magnam aspernatur?';
+  var txt2para2 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eveniet quidem ab, consequuntur iusto minus animi! Quod quos facilis corporis sint cumque sit magnam aspernatur?';
+  var txt2para3 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eveniet quidem ab, consequuntur iusto minus animi! Quod quos facilis corporis sint cumque sit magnam aspernatur?.';
+
+  var speed = 5;
+
+  function typeWriter(element, text, i) {
+    return new Promise((resolve) => {
+        if (i < text.length) {
+            element.innerHTML += text.charAt(i);
+            setTimeout(() => typeWriter(element, text, i + 1).then(resolve), speed);
+        } else {
+            resolve(); // Resolve the promise when done typing
+        }
+    });
+  }
+
+  window.onload = function() {
+    let heading1 = document.getElementById('heading1');
+    let para1_1 = document.getElementById('para1-1');
+    let para1_2 = document.getElementById('para1-2');
+
+    let heading2 = document.getElementById('heading2');
+    let para2_1 = document.getElementById('para2-1');
+    let para2_2 = document.getElementById('para2-2');
+    let para2_3 = document.getElementById('para2-3');
+
+    typeWriter(heading1, txt1heading, 0)
+        .then(() => typeWriter(para1_1, txt1para1, 0))
+        .then(() => typeWriter(para1_2, txt1para2, 0))
+        .then(() => typeWriter(heading2, txt2heading, 0))
+        .then(() => typeWriter(para2_1, txt2para1, 0))
+        .then(() => typeWriter(para2_2, txt2para2, 0))
+        .then(() => typeWriter(para2_3, txt2para3, 0));
+  }
+
+  function showBar() {
+    console.log("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
+    document.getElementById('continue-btn').disabled = false;
+<%#     ajax: {
+      url: "/dashboard/index1",
+      method: "GET",
+      delay: 250,
+      data: function (params) {
+        return {
+        };
+      },
+
+      processResults: function (data, params) {
+        return {
+          results: data.data
+        };
+      },
+      cache: true
+    }; %>
+    console.log("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
+  }
+</script>

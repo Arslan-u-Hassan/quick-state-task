@@ -19,74 +19,71 @@
     <meta property="og:site_name" content="Craft by Keenthemes" />
     <link rel="canonical" href="http://preview.keenthemes.comindex.html" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
-
-    <link rel="shortcut icon" href="../../assets/stylesheets/theme/assets/media/logos/favicon.ico" />
   </head>
 
   <body>
     <header>
       <nav class="bg-white px-8 py-4 d-flex align-items-center justify-content-between" >
-          <div class="d-flex align-items-center gap-2 gap-lg-10" >
-              <i class="d-lg-none ki-duotone ki-abstract-14 fs-1"><span class="path1"></span><span class="path2"></span></i>
-              <div>
-                  <img class="w-80px h-25px " src="./assets/quik-logo-new.svg">
-              </div>
-              <div class="d-none d-lg-flex align-items-center gap-12" >
-                  <div class="d-flex" >
-                      <div>
-                          <div class="d-flex tabs">
-                              <a href="#dashbaord" class="tab">Dashboard</a>
-                              <a href="#users" class="tab">Users</a>
-                              <a href="#orders" class="tab active">Orders</a>
-                              <a href="#buyers" class="tab">Buyers</a>
-                              <button class="px-4 py-2 bg-white border-0 d-flex align-items-center" id="kt_header_user_menu_toggle" >
-                                  <div class="text-gray-600 fs-6 d-flex align-items-center gap-4 cursor-pointer" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-start">
-                                    <span>Finance</span>
-                                    <img src="./assets/chevron-down.svg" width="12" height="12" >
+        <div class="d-flex align-items-center gap-2 gap-lg-10" >
+          <i class="d-lg-none ki-duotone ki-abstract-14 fs-1"><span class="path1"></span><span class="path2"></span></i>
+          <div>
+            <%= image_tag 'quik-logo-new.svg', class: "w-80px h-25px"%>
+          </div>
+          <div class="d-none d-lg-flex align-items-center gap-12" >
+              <div class="d-flex" >
+                  <div>
+                      <div class="d-flex tabs">
+                          <a href="#dashbaord" class="tab">Dashboard</a>
+                          <a href="#users" class="tab">Users</a>
+                          <a href="#orders" class="tab active">Orders</a>
+                          <a href="#buyers" class="tab">Buyers</a>
+                          <button class="px-4 py-2 bg-white border-0 d-flex align-items-center" id="kt_header_user_menu_toggle" >
+                              <div class="text-gray-600 fs-6 d-flex align-items-center gap-4 cursor-pointer" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-start">
+                                <span>Finance</span>
+                                <%= image_tag 'chevron-down.svg',  width: "12", height: "12" %>
+                              </div>
+                              <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-color fw-semibold py-4 fs-6 w-275px" data-kt-menu="true">
+                                  <div class="menu-item px-5">
+                                    <a href="account/settings.html" class="menu-link px-5">Transactions</a>
                                   </div>
-                                  <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-color fw-semibold py-4 fs-6 w-275px" data-kt-menu="true">
-                                      <div class="menu-item px-5">
-                                        <a href="account/settings.html" class="menu-link px-5">Transactions</a>
-                                      </div>
-                                      <div class="menu-item px-5">
-                                        <a href="account/settings.html" class="menu-link px-5">Payouts</a>
-                                      </div>
+                                  <div class="menu-item px-5">
+                                    <a href="account/settings.html" class="menu-link px-5">Payouts</a>
                                   </div>
-                              </button>
-                              <div class="tabsShadow"></div>
-                              <div class="glider"></div>
-                          </div>
+                              </div>
+                          </button>
+                          <div class="tabsShadow"></div>
+                          <div class="glider"></div>
                       </div>
                   </div>
               </div>
           </div>
+        </div>
           <div>
-              <div class="d-flex align-items-center ms-2 ms-lg-3" id="kt_header_user_menu_toggle">
-                  <div class="cursor-pointer symbol symbol-35px symbol-lg-35px" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
-                      <img alt="Pic" src="../theme/assets/media/avatars/300-1.jpg" />
-                  </div>
-                  <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-color fw-semibold py-4 fs-6 w-275px" data-kt-menu="true">
-                      <div class="menu-item px-3">
-                          <div class="menu-content d-flex align-items-center px-3">
-                              <div class="symbol symbol-50px me-5">
-                                  <img alt="Logo" src="../theme/assets/media/avatars/300-1.jpg" />
-                              </div>
-                              <div class="d-flex flex-column">
-                                  <div class="fw-bold d-flex align-items-center fs-5">Max Smith</div>
-                                  <a href="#" class="fw-semibold text-muted text-hover-primary fs-7">max@kt.com</a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="separator my-2"></div>
-                      <div class="menu-item px-5">
-                          <a href="account/settings.html" class="menu-link px-5">Account Settings</a>
-                      </div>
-                      <div class="menu-item px-5">
-                          <a href="account/settings.html" class="menu-link px-5">Sign Out</a>
-                      </div>
-
-                  </div>
+            <div class="d-flex align-items-center ms-2 ms-lg-3" id="kt_header_user_menu_toggle">
+              <div class="cursor-pointer symbol symbol-35px symbol-lg-35px" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
+                <%= image_tag '300-1.jpg', alt: "Pic"%>
               </div>
+              <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-color fw-semibold py-4 fs-6 w-275px" data-kt-menu="true">
+                <div class="menu-item px-3">
+                    <div class="menu-content d-flex align-items-center px-3">
+                        <div class="symbol symbol-50px me-5">
+                          <%= image_tag '300-1.jpg', alt: "Pic"%>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="fw-bold d-flex align-items-center fs-5">Max Smith</div>
+                            <a href="#" class="fw-semibold text-muted text-hover-primary fs-7">max@kt.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="separator my-2"></div>
+                <div class="menu-item px-5">
+                    <a href="account/settings.html" class="menu-link px-5">Account Settings</a>
+                </div>
+                <div class="menu-item px-5">
+                  <a href="account/settings.html" class="menu-link px-5">Sign Out</a>
+                </div>
+              </div>
+            </div>
           </div>
       </nav>
     </header>
@@ -144,24 +141,11 @@
   }
 
   function showBar() {
-    console.log("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
     document.getElementById('continue-btn').disabled = false;
-<%#     ajax: {
-      url: "/dashboard/index1",
-      method: "GET",
-      delay: 250,
-      data: function (params) {
-        return {
-        };
-      },
+    const fileInput = document.getElementById('csv-file-input');
+    const file = fileInput.files[0];
+    const fileName = encodeURIComponent(file.name);
 
-      processResults: function (data, params) {
-        return {
-          results: data.data
-        };
-      },
-      cache: true
-    }; %>
-    console.log("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
+    window.location.href = `/dashboard/index1?file_name=${fileName}`;
   }
 </script>
